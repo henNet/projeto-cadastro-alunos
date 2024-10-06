@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Alunos</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Formulários de Cadastro de Alunos</h1>
+    <div class="cadastro">
+      <!-- <form action="http://localhost:3000/inserir" method="post"> -->
+      <form>
+        <div class="dados">
+          Matricula: <input type="text" name="matricula" id="mat" /> Nome:<input
+            type="text"
+            name="nome"
+            id="nome"
+          />
+          Idade:<input type="text" name="idade" id="idade" />
+        </div>
+        <input type="submit" value="Cadastrar" onclick="cadastrar()" />
+      </form>
+    </div>
+    <hr />
+    <h2>Alunos cadastrados</h2>
+    <div class="todosAlunos"></div>
+    <script src="code.js"></script>
+  </body>
+</html>
